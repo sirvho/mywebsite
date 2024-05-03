@@ -22,6 +22,18 @@
 
     }
 
+    .fade-in {
+      animation: fadeIn ease 5s;
+      -webkit-animation: fadeIn ease 5s;
+      -moz-animation: fadeIn ease 5s;
+      -o-animation: fadeIn ease 5s;
+      -ms-animation: fadeIn ease 5s;
+    }
+
+    @keyframes fadeIn
+      to { 
+         opacity: 1; }
+    
     .header {
       padding: 2rem;
       margin-bottom: 1rem;
@@ -121,7 +133,9 @@
         <a href="#" class="header-nav-link">contact</a>
       </div>
     </div>
-     <img src="webBanner.png" alt="banner" class="header-image" />
+    <div class="fade-in">
+        <img src="webBanner.png" alt="banner" class="header-image" />
+    </div>
     <div class="main">
       <div class="main-section">
         <div class="main-section-title">Education</div>
